@@ -12,6 +12,26 @@ body{margin:0;font-family:Georgia,serif;color:#293b2d;background:#faf9f5;line-he
 header{padding:24px 8%;background:#23392c;color:#fff}
 header h1{font-size:27px;letter-spacing:3px;margin:0}
 header p{margin:3px 0;font-size:13px;letter-spacing:1px}
+
+/* Language switch */
+.language{
+  text-align:right;
+  font-family:Arial,sans-serif;
+  font-size:14px;
+}
+.language a,
+.language a:visited,
+.language a:hover,
+.language a:active{
+  color:#fff !important;
+  text-decoration:none;
+  margin-left:12px;
+}
+.language a.current{
+  font-weight:bold;
+  text-decoration:underline;
+}
+
 .hero{padding:110px 8%;text-align:center;color:white;background:linear-gradient(#17291c77,#17291c99),url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=85') center/cover}
 .hero h2{font-size:clamp(34px,5vw,54px);line-height:1.2;max-width:800px;margin:0 auto 22px}
 .hero p{font-size:19px;max-width:650px;margin:auto}
@@ -26,7 +46,7 @@ section h2{font-size:30px}
 .contact{max-width:none;text-align:center;background:#e9eee3;padding:55px 20px}
 .contact a{display:inline-block;margin-top:12px;padding:12px 24px;background:#304d35;color:white;text-decoration:none}
 footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:14px}
-  
+
 .contact input,
 .contact textarea {
   width: 100%;
@@ -94,23 +114,19 @@ footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:1
 <p>The guiding principle is simple: create landscapes that belong to their environment and grow in harmony with it.</p>
 </section>
 
-
 <section class="contact">
-  <h2>Discuss a Private Project</h2>
-  <p>Tell me about your property and your vision for its landscape. I welcome enquiries about individual projects and collaborations.</p>
+<h2>Discuss a Private Project</h2>
+<p>Tell me about your property and your vision for its landscape. I welcome enquiries about individual projects and collaborations.</p>
 
-  <form action="https://formsubmit.co/jdiamantes8@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Primal Landscapes: New Project Enquiry">
-    <input type="hidden" name="_captcha" value="true">
-
-    <p><input type="text" name="name" placeholder="Your name" required></p>
-    <p><input type="email" name="email" placeholder="Your email address" required></p>
-    <p><textarea name="message" placeholder="Tell me about your property and project" rows="5" required></textarea></p>
-
-    <button type="submit">Send Enquiry</button>
-  </form>
+<form action="https://formsubmit.co/jdiamantes8@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Primal Landscapes: New Project Enquiry">
+<input type="hidden" name="_captcha" value="true">
+<p><input type="text" name="name" placeholder="Your name" required></p>
+<p><input type="email" name="email" placeholder="Your email address" required></p>
+<p><textarea name="message" placeholder="Tell me about your property and project" rows="5" required></textarea></p>
+<button type="submit">Send Enquiry</button>
+</form>
 </section>
-
 
 <footer>Primal Landscapes · Inspired by nature</footer>
 </body>
