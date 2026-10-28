@@ -26,6 +26,27 @@ section h2{font-size:30px}
 .contact{max-width:none;text-align:center;background:#e9eee3;padding:55px 20px}
 .contact a{display:inline-block;margin-top:12px;padding:12px 24px;background:#304d35;color:white;text-decoration:none}
 footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:14px}
+  
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 520px;
+  padding: 12px;
+  border: 1px solid #bdc8b8;
+  background: #fff;
+  font: inherit;
+}
+.contact button {
+  padding: 13px 28px;
+  background: #304d35;
+  color: white;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.contact form p {
+  margin: 14px 0;
+}
 </style>
 </head>
 <body>
@@ -69,11 +90,23 @@ footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:1
 <p>The guiding principle is simple: create landscapes that belong to their environment and grow in harmony with it.</p>
 </section>
 
+
 <section class="contact">
-<h2>Private landscape projects</h2>
-<p>For landowners interested in a more natural, biodiverse and productive landscape, I welcome enquiries about individual properties and design collaborations.</p>
-<a href="mailto:jdiamantes8@gmail.com">Enquire about a project</a>
+  <h2>Discuss a Private Project</h2>
+  <p>Tell me about your property and your vision for its landscape. I welcome enquiries about individual projects and collaborations.</p>
+
+  <form action="https://formsubmit.co/jdiamantes8@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Primal Landscapes: New Project Enquiry">
+    <input type="hidden" name="_captcha" value="true">
+
+    <p><input type="text" name="name" placeholder="Your name" required></p>
+    <p><input type="email" name="email" placeholder="Your email address" required></p>
+    <p><textarea name="message" placeholder="Tell me about your property and project" rows="5" required></textarea></p>
+
+    <button type="submit">Send Enquiry</button>
+  </form>
 </section>
+
 
 <footer>Primal Landscapes · Inspired by nature</footer>
 </body>
