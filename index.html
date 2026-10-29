@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,38 +5,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Distinctive natural landscapes combining beauty, biodiversity, ecological resilience and edible abundance.">
 <title>Primal Landscapes | Natural Landscape Design</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Georgia,serif;color:#293b2d;background:#faf9f5;line-height:1.8}
-header{padding:24px 8%;background:#23392c;color:#fff}
-header h1{font-size:27px;letter-spacing:3px;margin:0}
-header p{margin:3px 0;font-size:13px;letter-spacing:1px}
 
-/* Language switch */
-.language{
-  text-align:right;
-  font-family:Arial,sans-serif;
-  font-size:14px;
+<style>
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #293b2d;
+    background: #faf9f5;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    padding: 24px 8%;
+    background: #23392c;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 27px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+header p {
+    margin: 3px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* Language links */
+.language {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
 .language a,
 .language a:visited,
 .language a:hover,
-.language a:active{
-  color:#fff !important;
-  text-decoration:none;
-  margin-left:12px;
+.language a:active {
+    color: #fff !important;
+    text-decoration: none;
+    margin-left: 12px;
 }
-.language a.current{
-  font-weight:bold;
-  text-decoration:underline;
+
+.language a.current {
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+/* Main image and title */
+.hero {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f5f3eb;
+}
+
 .hero-image {
+    display: block;
     width: 100%;
     height: 480px;
     background-image: url('file_0000000024188246bbcc184a43fdb87d.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
 }
 
 .hero h2 {
@@ -45,7 +83,8 @@ header p{margin:3px 0;font-size:13px;letter-spacing:1px}
     font-size: clamp(34px, 5vw, 54px);
     line-height: 1.2;
     max-width: 800px;
-    margin: 0 auto 18px;
+    margin: 0 auto;
+    padding: 32px 20px 12px;
 }
 
 .hero p {
@@ -53,50 +92,131 @@ header p{margin:3px 0;font-size:13px;letter-spacing:1px}
     font-size: 19px;
     line-height: 1.6;
     max-width: 650px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 20px 32px;
 }
-section{max-width:900px;margin:auto;padding:55px 25px}
-h2,h3{color:#456344;line-height:1.35}
-section h2{font-size:30px}
-.intro{text-align:center}
-.intro p{font-size:18px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.item{padding:22px;background:#edf0e6;border-top:3px solid #728568}
-.item h3{margin-top:0}
-.contact{max-width:none;text-align:center;background:#e9eee3;padding:55px 20px}
-.contact a{display:inline-block;margin-top:12px;padding:12px 24px;background:#304d35;color:white;text-decoration:none}
-footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:14px}
+
+/* Main sections */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 55px 25px;
+}
+
+h2, h3 {
+    color: #456344;
+    line-height: 1.35;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* Principles grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.item {
+    padding: 22px;
+    background: #edf0e6;
+    border-top: 3px solid #728568;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+/* Contact section */
+.contact {
+    max-width: none;
+    text-align: center;
+    background: #e9eee3;
+    padding: 55px 20px;
+}
 
 .contact input,
 .contact textarea {
-  width: 100%;
-  max-width: 520px;
-  padding: 12px;
-  border: 1px solid #bdc8b8;
-  background: #fff;
-  font: inherit;
+    width: 100%;
+    max-width: 520px;
+    padding: 12px;
+    border: 1px solid #bdc8b8;
+    background: #fff;
+    font: inherit;
 }
+
 .contact button {
-  padding: 13px 28px;
-  background: #304d35;
-  color: white;
-  border: 0;
-  font: inherit;
-  cursor: pointer;
+    padding: 13px 28px;
+    background: #304d35;
+    color: white;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
 }
+
 .contact form p {
-  margin: 14px 0;
+    margin: 14px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #23392c;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        letter-spacing: 2px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+        padding-top: 25px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
 }
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="language">
-<a href="./" class="current">English</a>
-<a href="index-el.html" lang="el">Ελληνικά</a>
-</div>
-<h1>PRIMAL LANDSCAPES</h1>
-<p>Natural beauty · Living ecosystems · Edible abundance</p>
+    <div class="language">
+        <a href="./" class="current">English</a>
+        <a href="index-el.html" lang="el">Ελληνικά</a>
+    </div>
+    <h1>PRIMAL LANDSCAPES</h1>
+    <p>Natural beauty · Living ecosystems · Edible abundance</p>
 </header>
 
 <div class="hero">
@@ -104,53 +224,67 @@ footer{text-align:center;background:#23392c;color:white;padding:20px;font-size:1
     <h2>Landscapes shaped by nature</h2>
     <p>Distinctive living environments where beauty, biodiversity and food production belong together.</p>
 </div>
-    <div class="hero-image"></div>
-</div>
 
 <section class="intro">
-<h2>A different vision of landscaping</h2>
-<p>Every landscape has the potential to become more than an ornamental garden. By working with natural processes, we can create places that are beautiful, ecologically resilient and rich in life.</p>
-<p>Native and locally adapted trees, wild edible species, fruit trees, herbs and ornamental vegetables can form a landscape that serves people while respecting the character of its surroundings.</p>
+    <h2>A different vision of landscaping</h2>
+    <p>Every landscape has the potential to become more than an ornamental garden. By working with natural processes, we can create places that are beautiful, ecologically resilient and rich in life.</p>
+    <p>Native and locally adapted trees, wild edible species, fruit trees, herbs and ornamental vegetables can form a landscape that serves people while respecting the character of its surroundings.</p>
 </section>
 
 <section>
-<h2>Principles of a living landscape</h2>
-<div class="grid">
-<div class="item">
-<h3>Adapted to its place</h3>
-<p>Plant choices respond to local climate, soil, water and existing vegetation, supporting resilience through environmental extremes.</p>
-</div>
-<div class="item">
-<h3>Beauty with purpose</h3>
-<p>Trees, herbs, flowers and edible plants combine visual richness with biodiversity and the potential to produce food.</p>
-</div>
-<div class="item">
-<h3>Working with nature</h3>
-<p>Natural processes guide the design, with the aim of reducing unnecessary artificial inputs and demanding maintenance.</p>
-</div>
-</div>
+    <h2>Principles of a living landscape</h2>
+
+    <div class="grid">
+        <div class="item">
+            <h3>Adapted to its place</h3>
+            <p>Plant choices respond to local climate, soil, water and existing vegetation, supporting resilience through environmental extremes.</p>
+        </div>
+
+        <div class="item">
+            <h3>Beauty with purpose</h3>
+            <p>Trees, herbs, flowers and edible plants combine visual richness with biodiversity and the potential to produce food.</p>
+        </div>
+
+        <div class="item">
+            <h3>Working with nature</h3>
+            <p>Natural processes guide the design, with the aim of reducing unnecessary artificial inputs and demanding maintenance.</p>
+        </div>
+    </div>
 </section>
 
 <section>
-<h2>A considered approach to each property</h2>
-<p>No two properties are alike. The process begins by understanding the land—its natural conditions, existing vegetation, possibilities and limitations. From there, a landscape concept can be developed around the particular character of the place and the owner's aspirations.</p>
-<p>The guiding principle is simple: create landscapes that belong to their environment and grow in harmony with it.</p>
+    <h2>A considered approach to each property</h2>
+    <p>No two properties are alike. The process begins by understanding the land—its natural conditions, existing vegetation, possibilities and limitations. From there, a landscape concept can be developed around the particular character of the place and the owner's aspirations.</p>
+    <p>The guiding principle is simple: create landscapes that belong to their environment and grow in harmony with it.</p>
 </section>
 
 <section class="contact">
-<h2>Discuss a Private Project</h2>
-<p>Tell me about your property and your vision for its landscape. I welcome enquiries about individual projects and collaborations.</p>
+    <h2>Discuss a Private Project</h2>
+    <p>Tell me about your property and your vision for its landscape. I welcome enquiries about individual projects and collaborations.</p>
 
-<form action="https://formsubmit.co/jdiamantes8@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="Primal Landscapes: New Project Enquiry">
-<input type="hidden" name="_captcha" value="true">
-<p><input type="text" name="name" placeholder="Your name" required></p>
-<p><input type="email" name="email" placeholder="Your email address" required></p>
-<p><textarea name="message" placeholder="Tell me about your property and project" rows="5" required></textarea></p>
-<button type="submit">Send Enquiry</button>
-</form>
+    <form action="https://formsubmit.co/jdiamantes8@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Primal Landscapes: New Project Enquiry">
+        <input type="hidden" name="_captcha" value="true">
+
+        <p>
+            <input type="text" name="name" placeholder="Your name" required>
+        </p>
+
+        <p>
+            <input type="email" name="email" placeholder="Your email address" required>
+        </p>
+
+        <p>
+            <textarea name="message" placeholder="Tell me about your property and project" rows="5" required></textarea>
+        </p>
+
+        <button type="submit">Send Enquiry</button>
+    </form>
 </section>
 
-<footer>Primal Landscapes · Inspired by nature</footer>
+<footer>
+    Primal Landscapes · Inspired by nature
+</footer>
+
 </body>
 </html>
